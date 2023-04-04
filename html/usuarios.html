@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Usuario registrados</title>
+</head>
+<body>
+    <heard class="heard">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="registro.html">Completar registro</a>
+            <a href="https://github.com/aldopuello" target="Aldo Puello">Conctact</a>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="search..">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </heard>
+
+    <div class="background"></div>
+    <div class="containe">
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Contraseña</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">fecha de Nacimiento</th>
+            </tr>
+            </thead>
+            <tbody id="tabla-usuario">
+               
+            </tbody>
+        </table>
+        <button onclick="Listar()" class="btn btn-dark">Listar</button>
+    </div>
+    <script src="../js/formulario.js"></script>
+    <script src="../js/Data.js"></script>
+    
+</body>
+</html>
