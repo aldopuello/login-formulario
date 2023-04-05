@@ -10,74 +10,75 @@
     <title>Actividad web #1</title>
 </head>
 <body>
-    <heard class="heard">
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="registro.html">Completar registro</a>
-            <a href="https://github.com/aldopuello" target="Aldo Puello">Contactos</a>
-        </nav>
-
-        <form action="#" class="search-bar">
-            <input type="text" placeholder="search..">
-            <button type="submit"><i class='bx bx-search'></i></button>
-        </form>
-    </heard>
-
-    <div class="background"></div>
-    <div class="containe">
-        <div class="content">
-            <h2 class="logo">CUC</h2>
-
-            <div class="text-sci">
-                <h2>Welcome! <br><span>To Our New website.</span></h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officiis delectus facilis aut quibusdam? Dolore nisi exercitationem quo reprehenderit veritatis fugiat hic asperiores ipsam, rerum maxime, sequi, totam delectus inventore?</p>
-
-                <div class="social-icons">
-                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-
-                </div>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+              <input type="txt" class="form-control" id="nombre">
             </div>
-        </div>
-            <!-- login  -->
-        <div class="logreg-box">
-            <div class="form-box login">
-                <form action="#">
-                    <h2>Sing In </h2>
 
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" id="correo" required>
-                        <label>Email</label>
-                    </div>
-
-
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" id="contraseña" required>
-                        <label>Password</label>
-                    </div>
-
-
-                    <div class="remenber-forgot">
-                        <label><input type="checkbox">Remember me</label>
-                        <a href="#">forgot password?</a>
-                    </div>
-
-                    <button type="submit" class="btn">Sing In </button>
-
-                    <div class="login-registre">
-                        <p>Don't have an account? <a href="#" class="register-link">Sing up</a></p>
-                    </div>
-                </form>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Apellidos</label>
+              <input type="txt" class="form-control" id="apellidos" required>
             </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="contraseña" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="correo" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Cedula</label>
+                <input type="txt" class="form-control" id="cedula" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Telefono</label>
+                <input type="txt" class="form-control" id="telefono" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Ciudad</label>
+                <input type="txt" class="form-control" id="ciudad" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nacimiento</label>
+                <input type="date" class="form-control" id="nacimiento" required>
+              </div>
+
+            <button onclick="guardarData() " class="btn btn-primary">Listar</button>
+          </form>
+      </div>
+
+        <div class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">fecha de Nacimiento</th>
+                  </tr>
+                </thead>
+                <tbody id="tabla-usuario">
+                  
+                </tbody>
+              </table>
+            
         </div>
-    </div>
-    <script src="../js/Login.js"></script>
+
+
     <script src="../js/Data.js"></script>
-    <!-- <script src="../js/Formulario.js"></script> -->
 </body>
 </html>
